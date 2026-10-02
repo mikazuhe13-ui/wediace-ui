@@ -2,8 +2,18 @@
 
 English | [中文](README.zh.md)
 
-# Notice ⚠️: As DSH has been updated, I am unable to promptly update the plugin with the new APIdue to my academic commitments. Please use an alternative agent to replace or repair it yourself to avoid crashes when installing this plugin.
+> **This is a personal custom branch** of [`WYH66666666/DSH-Transparent-UI-Plugin`](https://github.com/WYH66666666/DSH-Transparent-UI-Plugin) (originally `dsh-client-ui-aqua`).
+>
+> Renamed to `wediace-ui` and rebranded for personal use: Wediace wordmark, VIOLET badge,
+> butterfly hero logo and a custom headline. See [CHANGELOG.md](CHANGELOG.md) for the diff
+> and [DEVELOPMENT-NOTES.md](DEVELOPMENT-NOTES.md) for the maintenance guide.
+>
+> **Install:**
+> ```bash
+> dsh plugin --profile desktop add github:mikazuhe13-ui/wediace-ui
+> ```
 
+> ⚠️ Upstream notice (kept for reference): As DSH has been updated, the original author is unable to promptly update the plugin with the new API due to academic commitments. Please use an alternative agent to replace or repair it yourself to avoid crashes when installing this plugin.
 
 Aqua is a highly customizable glassmorphism theme for the DeepSeek Harness web UI. The header, sidebar, composer, stats line, and trajectory view all become panes of frosted glass. you can put video for wallpaper and Switch it off and the stock UI comes back exactly, with no source changes to DSH itself.
 

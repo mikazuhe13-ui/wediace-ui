@@ -1,5 +1,53 @@
 # Changelog
 
+## v1.3.1-brand.1 （Wediace 品牌定制版）
+
+> 基于 v1.3.0-adapt.1 的个人定制分支，包名由 `dsh-client-ui-aqua` 改为 `wediace-ui`。
+
+### 品牌定制
+
+- **侧栏品牌区**：隐藏原版「鲸鱼 logo + deepseek 字标 + HARNESS 铭牌」，替换为
+  - `Wediace` 彩色矢量字标（自矢量化 SVG，180×43px，字母 e 的镂空用 SVG mask 真挖空）
+  - `VIOLET` 黑色胶囊铭牌（10px 实心，跟随主题自动反色）
+- **会话头部（Hero 区）**：隐藏鲸鱼图标 + 删除「预览版」胶囊，替换为
+  - 彩色蝴蝶矢量图标（40×31px）
+  - 标题改为「用心去阅读，感受，表达」（900 特粗 / 1.35em / 字距 .08em）
+- **深色模式适配**：Wediace 字标新增浅色变体（`#07070B` → `#EDF1F7`，紫色点缀保留），
+  通过 `body[data-ds-dark-theme]` 自动切换
+
+### 修复
+
+- **右侧栏被毛玻璃覆盖**：兼容模式模糊规则的 `[class*=card]`/`[class*=bubble]`/`[class*=panel]`
+  子串误匹配 DSH 布局类名，导致大容器被套 `backdrop-filter`。收窄选择器为
+  `[role=menu]` / `[role=tooltip]` / `[class*=popover]` / `[class*=dropdown]`
+- **字母 e 中间变紫色实心**：矢量化 SVG 清理时误删了字母 e 的白色镂空路径（`#FEFEFE`），
+  改用 `<mask>` 正确挖空
+- **`cordis.patch.yml` 未随包发布**：`package.json` 的 `files` 白名单缺该文件，
+  导致安装后 DSH 启动报 `ENOENT ... cordis.patch.yml`。已补入白名单
+
+### 性能
+
+- `wordmarkSync()` / `headerSync()` 增加**短路守卫**：注入成功后立即 return，
+  避免流式对话时每次 DOM 变更都做全页面 `querySelectorAll("*")` 扫描
+
+### 其他
+
+- 删除过期 `lib/client.js.map`（源码映射已与产物不符）
+- 删除上游 npm 发布脚手架（`build.ps1` / `install.ps1` / `publish.ps1`）
+- 清理旧名类型声明与 14KB 死代码（已废弃的 glyph mask 规则）
+
+### 安装
+
+```bash
+dsh plugin --profile desktop add github:mikazuhe13-ui/wediace-ui
+```
+
+或在 profile 的 `package.json` 中声明：
+
+```json
+"wediace-ui": "github:mikazuhe13-ui/wediace-ui"
+```
+
 ## v1.3.0
 
 - 视频壁纸全面升级：浏览器原生解码、无进度条、循环播放、铺满裁剪，窗口缩放实时自适应
