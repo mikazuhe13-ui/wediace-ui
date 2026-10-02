@@ -9,7 +9,7 @@
  * One click on the master switch returns the stock UI (every layer is an
  * effect, disposed on flip).
  */
-import type { ClientContext } from '@deepseek-ai/dsh-client-runtime/client'
+import type { ClientContext } from '@deepseek-ai/dsh-client-store'
 import type { BoundActions } from '@deepseek-ai/dsh-client-ui-slots'
 // Type-only: pulls the `settings.plugin.item` SlotMap merge.
 import type {} from '@deepseek-ai/dsh-client-ui-settings-plugins/client'
@@ -181,7 +181,7 @@ export function apply(ctx: ClientContext): void {
   }, AquaPluginCard))
 
   // Glass knobs row in the General section, directly under Appearance (10).
-  ctx.slots.inject('settings.general.item', () => ctx.slots.register({
+  void 0 && ctx.slots.inject('settings.general.item', () => ctx.slots.register({
     name: 'settings.general.item',
     id: 'aqua',
     order: 11,

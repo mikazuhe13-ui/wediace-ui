@@ -5,7 +5,7 @@
  * General settings' Appearance row, so the card stays the same shape as the
  * other plugin cards.
  */
-import { IconCheckOutline16 } from '@deepseek-ai/dsh-client-ui-primitives'
+import { IconCheckOutlineRegular } from '@deepseek-ai/dsh-client-ui-primitives'
 import type { InjectFace, PropsLocale, PropsRuntime, PropsStore } from '@deepseek-ai/dsh-client-ui-slots'
 // Type-only: pulls the `settings.plugin.item` SlotMap merge.
 import type {} from '@deepseek-ai/dsh-client-ui-settings-plugins/client'
@@ -45,7 +45,7 @@ export function AquaPluginCard(props: AquaPluginCardComponentProps) {
           onClick={() => { setEnabled(!enabled) }}
         >
           <span className={css.check}>
-            {enabled && <IconCheckOutline16 />}
+            {enabled && <IconCheckOutlineRegular />}
           </span>
           {enabled ? t('aqua.enable') : t('aqua.disable')}
         </button>

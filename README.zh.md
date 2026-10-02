@@ -1,4 +1,4 @@
-# @deepseek-ai/dsh-client-ui-aqua
+# wediace-ui
 
 [English](README.md) | 中文
 
@@ -29,7 +29,7 @@ Aqua 是一层高自由度的玻璃质感主题，套在 DeepSeek Harness 网页
 ### 方式一：npm 一键安装（推荐）
 
 ```sh
-dsh plugin --profile web add dsh-client-ui-aqua
+dsh plugin --profile web add wediace-ui
 ```
 
 从 npm 安装最新版，自动注册为 profile 插件层（`dsh.bundle` 补丁），所有平台通用。刷新 Web 界面即可。
@@ -57,7 +57,7 @@ powershell -ExecutionPolicy Bypass -Command "Invoke-WebRequest 'https://github.c
 
 ```sh
 git clone --depth 1 --branch v1.1.0 https://github.com/WYH66666666/DSH-Transparent-UI-Plugin.git
-ln -s "$PWD/DSH" "$DSH_HOME/profiles/node_modules/@deepseek-ai/dsh-client-ui-aqua"
+ln -s "$PWD/DSH" "$DSH_HOME/profiles/node_modules/wediace-ui"
 ```
 
 然后往 `$DSH_HOME/profiles/web/cordis.patch.yml` 追加：
@@ -65,7 +65,7 @@ ln -s "$PWD/DSH" "$DSH_HOME/profiles/node_modules/@deepseek-ai/dsh-client-ui-aqu
 ```yaml
 - insert:
     - id: ui-aqua
-      name: '@deepseek-ai/dsh-client-ui-aqua'
+      name: 'wediace-ui'
 ```
 
 ## 使用

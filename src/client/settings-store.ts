@@ -3,7 +3,7 @@
  * knobs and the backdrop source). The plugin's apply-world change listener is
  * the only writer; the row component reads via props.useStore.
  */
-import { defineStore, type EngineStoreHandle } from '@deepseek-ai/dsh-client-runtime/client'
+import { defineStore, type EngineStoreHandle } from '@deepseek-ai/dsh-client-store'
 
 /** Store state mirrored from the Aqua settings scope. */
 export interface AquaRowState {
@@ -85,7 +85,7 @@ export function createAquaRowStore(): EngineStoreHandle<AquaRowState, AquaRowAct
   return defineStore({
     init: (): AquaRowState => ({
       enabled: true,
-      mode: 'mica',
+      mode: 'compat',
       blur: 20,
       frost: 7,
       fluidHue: 320,
@@ -94,11 +94,11 @@ export function createAquaRowStore(): EngineStoreHandle<AquaRowState, AquaRowAct
       dark: false,
       background: 'fluid',
       wallpaper: '',
-      whale: true,
-      critters: true,
-      mesh: true,
-      spotlight: true,
-      press: true,
+      whale: false,
+      critters: false,
+      mesh: false,
+      spotlight: false,
+      press: false,
       wallpaperBlur: 0,
       wallpaperFrost: 0,
       videoBlur: 6,

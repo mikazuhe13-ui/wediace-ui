@@ -1,4 +1,4 @@
-# @deepseek-ai/dsh-client-ui-aqua
+# wediace-ui
 
 English | [中文](README.zh.md)
 
@@ -30,7 +30,7 @@ Aqua is a highly customizable glassmorphism theme for the DeepSeek Harness web U
 ### Option 1: npm one-liner (recommended)
 
 ```sh
-dsh plugin --profile web add dsh-client-ui-aqua
+dsh plugin --profile web add wediace-ui
 ```
 
 Installs the latest version from npm and registers it as a profile plugin layer (`dsh.bundle` patch) — works on every platform. Reload the web UI and it is on.
@@ -58,7 +58,7 @@ Pin a version or track the dev branch:
 
 ```sh
 git clone --depth 1 --branch v1.1.0 https://github.com/WYH66666666/DSH-Transparent-UI-Plugin.git
-ln -s "$PWD/DSH" "$DSH_HOME/profiles/node_modules/@deepseek-ai/dsh-client-ui-aqua"
+ln -s "$PWD/DSH" "$DSH_HOME/profiles/node_modules/wediace-ui"
 ```
 
 then append to `$DSH_HOME/profiles/web/cordis.patch.yml`:
@@ -66,7 +66,7 @@ then append to `$DSH_HOME/profiles/web/cordis.patch.yml`:
 ```yaml
 - insert:
     - id: ui-aqua
-      name: '@deepseek-ai/dsh-client-ui-aqua'
+      name: 'wediace-ui'
 ```
 
 ## Usage

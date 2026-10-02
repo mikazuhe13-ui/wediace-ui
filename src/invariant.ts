@@ -1,16 +1,16 @@
 /**
- * Package-owned invariant companion for `@deepseek-ai/dsh-client-ui-aqua`.
- * @module @deepseek-ai/dsh-client-ui-aqua/invariant
+ * Package-owned invariant companion for `wediace-ui`.
+ * @module wediace-ui/invariant
  */
 
 /* jscpd:ignore-start */
 import type { Context } from '@deepseek-ai/cordis'
 import type { InvariantInstaller } from '@deepseek-ai/dsh-invariants'
 
-const PACKAGE_NAME = '@deepseek-ai/dsh-client-ui-aqua'
+const PACKAGE_NAME = 'wediace-ui'
 
 /** Cordis companion plugin name. */
-export const name = 'client-ui-aqua-invariant'
+export const name = 'wediace-ui-invariant'
 /** Service required before the companion can reserve package ownership. */
 export const inject = ['invariants']
 

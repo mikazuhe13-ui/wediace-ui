@@ -33,7 +33,7 @@ export const AQUA_ENABLED_KEY = 'dsh.ui-aqua.enabled'
 export const DEFAULT_ENABLED = true
 
 /** The layer's identity in the theme override stack (inspection-visible). */
-const OVERRIDE_SOURCE = '@deepseek-ai/dsh-client-ui-aqua'
+const OVERRIDE_SOURCE = 'wediace-ui'
 
 const FONT_STACK = "'Space Grotesk Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', "
   + "'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif"
@@ -169,34 +169,34 @@ export const AQUA_TOKEN_OVERRIDES: ThemeTokenOverrides = {
  * any plugin that consumes the shared design tokens gets the glass for free.
  */
 const COMPAT_SURFACE_OVERRIDES: ThemeTokenOverrides = {
-  '--dsw-alias-bg-layer-1': { light: 'rgba(255, 255, 255, 0.55)', dark: 'rgba(17, 26, 39, 0.55)' },
-  '--dsw-alias-bg-layer-2': { light: 'rgba(236, 242, 250, 0.5)', dark: 'rgba(22, 33, 48, 0.55)' },
-  '--dsw-alias-bg-layer-3': { light: 'rgba(226, 235, 247, 0.45)', dark: 'rgba(28, 42, 61, 0.5)' },
-  '--dsw-alias-bg-overlay': { light: 'rgba(220, 231, 244, 0.6)', dark: 'rgba(34, 51, 74, 0.6)' },
-  '--dsw-alias-bg-module-platform': { light: 'rgba(255, 255, 255, 0.55)', dark: 'rgba(17, 26, 39, 0.55)' },
-  '--dsw-alias-bg-multi-select': { light: 'rgba(255, 255, 255, 0.55)', dark: 'rgba(22, 33, 48, 0.55)' },
-  '--dsw-specific-menu': { light: 'rgba(234, 241, 249, 0.6)', dark: 'rgba(22, 33, 48, 0.6)' },
-  '--dsw-specific-selector': { light: 'rgba(234, 241, 249, 0.55)', dark: 'rgba(28, 42, 61, 0.55)' },
-  '--dsw-specific-bubble': { light: 'rgba(240, 245, 252, 0.55)', dark: 'rgba(18, 28, 42, 0.55)' },
-  '--dsw-specific-bubble-highlight': { light: 'rgba(220, 233, 251, 0.55)', dark: 'rgba(26, 40, 58, 0.55)' },
-  '--dsw-specific-tip': { light: 'rgba(234, 241, 249, 0.6)', dark: 'rgba(19, 29, 43, 0.6)' },
-  '--dsw-specific-input-major': { light: 'rgba(255, 255, 255, 0.5)', dark: 'rgba(16, 25, 39, 0.5)' },
-  '--dsw-specific-login-input': { light: 'rgba(240, 245, 251, 0.5)', dark: 'rgba(13, 20, 31, 0.5)' },
-  '--dsw-alias-markdown-code-block': { light: 'rgba(240, 245, 251, 0.5)', dark: 'rgba(13, 20, 31, 0.5)' },
-  '--dsw-alias-markdown-code-block-banner': { light: 'rgba(245, 248, 253, 0.55)', dark: 'rgba(18, 27, 41, 0.55)' },
-  '--dsw-alias-markdown-inline-code': { light: 'rgba(228, 237, 248, 0.5)', dark: 'rgba(23, 35, 52, 0.5)' },
-  '--dsw-alias-markdown-citation': { light: 'rgba(234, 241, 249, 0.55)', dark: 'rgba(26, 37, 52, 0.55)' },
-  '--dsw-alias-markdown-tag': { light: 'rgba(228, 237, 248, 0.5)', dark: 'rgba(22, 33, 48, 0.5)' },
-  '--dsw-alias-markdown-placeholder': { light: 'rgba(234, 241, 249, 0.55)', dark: 'rgba(19, 29, 43, 0.55)' },
-  '--dsw-alias-toast-bg': { light: 'rgba(27, 50, 86, 0.85)', dark: 'rgba(28, 42, 61, 0.85)' },
-  '--dsw-alias-tooltip-bg': { light: 'rgba(19, 36, 62, 0.88)', dark: 'rgba(22, 33, 48, 0.88)' },
+  '--dsw-alias-bg-layer-1': { light: 'rgba(255, 255, 255, 0.83)', dark: 'rgba(17, 26, 39, 0.83)' },
+  '--dsw-alias-bg-layer-2': { light: 'rgba(236, 242, 250, 0.78)', dark: 'rgba(22, 33, 48, 0.83)' },
+  '--dsw-alias-bg-layer-3': { light: 'rgba(226, 235, 247, 0.73)', dark: 'rgba(28, 42, 61, 0.78)' },
+  '--dsw-alias-bg-overlay': { light: 'rgba(220, 231, 244, 0.88)', dark: 'rgba(34, 51, 74, 0.88)' },
+  '--dsw-alias-bg-module-platform': { light: 'rgba(255, 255, 255, 0.83)', dark: 'rgba(17, 26, 39, 0.83)' },
+  '--dsw-alias-bg-multi-select': { light: 'rgba(255, 255, 255, 0.83)', dark: 'rgba(22, 33, 48, 0.83)' },
+  '--dsw-specific-menu': { light: 'rgba(234, 241, 249, 0.88)', dark: 'rgba(22, 33, 48, 0.88)' },
+  '--dsw-specific-selector': { light: 'rgba(234, 241, 249, 0.83)', dark: 'rgba(28, 42, 61, 0.83)' },
+  '--dsw-specific-bubble': { light: 'rgba(240, 245, 252, 0.83)', dark: 'rgba(18, 28, 42, 0.83)' },
+  '--dsw-specific-bubble-highlight': { light: 'rgba(220, 233, 251, 0.83)', dark: 'rgba(26, 40, 58, 0.83)' },
+  '--dsw-specific-tip': { light: 'rgba(234, 241, 249, 0.88)', dark: 'rgba(19, 29, 43, 0.88)' },
+  '--dsw-specific-input-major': { light: 'rgba(255, 255, 255, 0.78)', dark: 'rgba(16, 25, 39, 0.78)' },
+  '--dsw-specific-login-input': { light: 'rgba(240, 245, 251, 0.78)', dark: 'rgba(13, 20, 31, 0.78)' },
+  '--dsw-alias-markdown-code-block': { light: 'rgba(240, 245, 251, 0.78)', dark: 'rgba(13, 20, 31, 0.78)' },
+  '--dsw-alias-markdown-code-block-banner': { light: 'rgba(245, 248, 253, 0.83)', dark: 'rgba(18, 27, 41, 0.83)' },
+  '--dsw-alias-markdown-inline-code': { light: 'rgba(228, 237, 248, 0.78)', dark: 'rgba(23, 35, 52, 0.78)' },
+  '--dsw-alias-markdown-citation': { light: 'rgba(234, 241, 249, 0.83)', dark: 'rgba(26, 37, 52, 0.83)' },
+  '--dsw-alias-markdown-tag': { light: 'rgba(228, 237, 248, 0.78)', dark: 'rgba(22, 33, 48, 0.78)' },
+  '--dsw-alias-markdown-placeholder': { light: 'rgba(234, 241, 249, 0.83)', dark: 'rgba(19, 29, 43, 0.83)' },
+  '--dsw-alias-toast-bg': { light: 'rgba(27, 50, 86, 0.92)', dark: 'rgba(28, 42, 61, 0.92)' },
+  '--dsw-alias-tooltip-bg': { light: 'rgba(19, 36, 62, 0.92)', dark: 'rgba(22, 33, 48, 0.92)' },
 }
 
 /** Compatibility token layer: the palette plus the translucent surfaces. */
 const COMPAT_TOKEN_OVERRIDES: ThemeTokenOverrides = { ...AQUA_TOKEN_OVERRIDES, ...COMPAT_SURFACE_OVERRIDES }
 
 /** Read the persisted enable flag (absent storage means on). */
-function readEnabled(): boolean {
+function readEnabled(): boolean { return true;
   try {
     const raw = localStorage.getItem(AQUA_ENABLED_KEY)
     return raw === null ? DEFAULT_ENABLED : raw === 'true'
@@ -254,17 +254,17 @@ export interface AquaSettings {
 
 /** Shipped defaults — what a first-time install sees (the tuned look). */
 const SETTINGS_DEFAULTS: AquaSettings = {
-  mode: 'mica',
+  mode: 'compat',
   blur: 20,
   frost: 7,
   bgBrightness: 50,
   background: 'fluid',
   wallpaper: '',
-  whale: true,
-  critters: true,
-  mesh: true,
-  spotlight: true,
-  press: true,
+  whale: false,
+  critters: false,
+  mesh: false,
+  spotlight: false,
+  press: false,
   fluidHue: 320,
   fluidDepth: 25,
   wallpaperBlur: 0,
@@ -324,7 +324,7 @@ function writeSetting(key: NumericKey, value: number): void {
 }
 
 /** Read the backdrop source ('fluid' or 'wallpaper'). */
-function readBackground(): 'fluid' | 'wallpaper' {
+function readBackground(): 'fluid' | 'wallpaper' { return 'fluid' as const;
   try {
     return localStorage.getItem(BACKGROUND_KEY) === 'wallpaper' ? 'wallpaper' : 'fluid'
   } catch {
@@ -343,13 +343,13 @@ function writeBackground(value: 'fluid' | 'wallpaper'): void {
 
 /** Read the rendering mode ('mica' or 'compat'; legacy 'float'/'liquid'
  *  values migrate to 'mica'). */
-function readMode(): 'mica' | 'compat' {
+function readMode(): 'mica' | 'compat' { return 'compat' as const;
   try {
     const stored = localStorage.getItem(MODE_KEY)
-    if (stored === 'compat') return 'compat'
-    return 'mica'
+    if (stored === 'mica') return 'mica'
+    return 'compat'
   } catch {
-    return 'mica'
+    return 'compat'
   }
 }
 
@@ -363,7 +363,7 @@ function writeMode(value: 'mica' | 'compat'): void {
 }
 
 /** Read the wallpaper data URL (absent/oversized means empty). */
-function readWallpaper(): string {
+function readWallpaper(): string { return '' as const;
   try {
     return localStorage.getItem(WALLPAPER_KEY) ?? ''
   } catch {
@@ -381,7 +381,7 @@ function writeWallpaper(value: string): void {
 }
 
 /** Read the particle-whale flag (absent means on). */
-function readWhale(): boolean {
+function readWhale(): boolean { return false;
   try {
     const raw = localStorage.getItem(WHALE_KEY)
     return raw === null ? true : raw === 'true'
@@ -400,7 +400,7 @@ function writeWhale(value: boolean): void {
 }
 
 /** Read the critters flag (absent means on). */
-function readCritters(): boolean {
+function readCritters(): boolean { return false;
   try {
     const raw = localStorage.getItem(CRITTERS_KEY)
     return raw === null ? true : raw === 'true'
@@ -419,7 +419,7 @@ function writeCritters(value: boolean): void {
 }
 
 /** Read the interactive-mesh flag (absent means on). */
-function readMesh(): boolean {
+function readMesh(): boolean { return false;
   try {
     const raw = localStorage.getItem(MESH_KEY)
     return raw === null ? true : raw === 'true'
@@ -438,7 +438,7 @@ function writeMesh(value: boolean): void {
 }
 
 /** Read the cursor-spotlight flag (absent means on). */
-function readSpotlight(): boolean {
+function readSpotlight(): boolean { return false;
   try {
     const raw = localStorage.getItem(SPOTLIGHT_KEY)
     return raw === null ? true : raw === 'true'
@@ -457,7 +457,7 @@ function writeSpotlight(value: boolean): void {
 }
 
 /** Read the hover-press flag (absent means on). */
-function readPress(): boolean {
+function readPress(): boolean { return false;
   try {
     // One-shot migration: the entrance-rise key from the earlier iteration
     // never shipped — drop it so no stale preference lingers.
